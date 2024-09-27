@@ -1,0 +1,89 @@
+.form-btn{
+	border: none;
+  overflow: hidden;
+  transition: all .6s;
+}
+
+.form-btn:hover {
+    text-decoration: none;
+    color: #5E0421 !important;
+    z-index: 3;
+}
+.form-btn:before {
+    position: absolute;
+    content: '';
+    display: inline-block;
+    top: -180px;
+    left: 0;
+    width: 30px;
+    height: 100%;
+    background-color: rgb(155, 156, 156);
+    animation: shiny-btn1 4s ease-in-out infinite;
+}
+
+
+@-webkit-keyframes shiny-btn1 {
+    0% { -webkit-transform: scale(0) rotate(45deg); opacity: 0; }
+    80% { -webkit-transform: scale(0) rotate(45deg); opacity: 0.5; }
+    81% { -webkit-transform: scale(4) rotate(45deg); opacity: 1; }
+    100% { -webkit-transform: scale(50) rotate(45deg); opacity: 0; }
+}
+
+
+
+
+.menu-btn {
+  transition: all 0.3s;
+  position: relative;
+}
+.menu-btn:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #0cf;
+  border-radius: 10rem;
+  z-index: -2;
+}
+.menu-btn:before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background-color: #5E0421;
+  transition: all 0.5s;
+  border-radius: 10px;
+  z-index: -1;
+}
+.menu-btn:hover {
+  color: #fff;
+}
+.menu-btn:hover:before {
+  width: 100%;
+}
+/* optional reset for presentation */
+
+.footer-btn{
+  transition: .3s;
+}
+
+.footer-btn:hover{
+  border: 3px solid !important;
+  font-weight: 800;
+  transition: .3s;
+}
+
+
+
+.button__animation {
+  transition: all 0.3s;
+  position: relative;
+}
+
+.button__animation:hover{
+  transform: scale(1.02);
+}
